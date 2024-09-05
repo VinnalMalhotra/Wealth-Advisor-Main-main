@@ -145,7 +145,7 @@ const Search: Template<TemplateRenderProps> = ({ document }) => {
       <h2>Articles and Insights by Ali Hussain</h2>
       <article>
         <img
-          src="https://via.placeholder.com/150"
+          src="https://media.istockphoto.com/id/1346853640/photo/saving-money-concept-man-hand-putting-row-and-coin-write-finance-saving-money-concept-man.jpg?s=612x612&w=0&k=20&c=1I48V9GUU0liAJ-dMA4SW-h5LoejkBTlEZJ-0b_vmXE="
           alt="Article Image 1"
           aria-label="Article Image 1"
         />
@@ -159,7 +159,7 @@ const Search: Template<TemplateRenderProps> = ({ document }) => {
       </article>
       <article>
         <img
-          src="https://via.placeholder.com/150"
+          src="https://blog.geojit.com/wp-content/uploads/2018/05/iStock_000037133790_Double.jpg"
           alt="Article Image 2"
           aria-label="Article Image 2"
         />
@@ -173,7 +173,7 @@ const Search: Template<TemplateRenderProps> = ({ document }) => {
       </article>
       <article>
         <img
-          src="https://via.placeholder.com/150"
+          src="https://weitzinvestments.com/sitefiles/live/images/Navigating%20Volatility_iStock-1144604465-min.jpg"
           alt="Article Image 3"
           aria-label="Article Image 3"
         />
@@ -199,7 +199,7 @@ const Search: Template<TemplateRenderProps> = ({ document }) => {
       </article>
       
       <img 
-        src="https://via.placeholder.com/300x200" 
+        src="https://media.istockphoto.com/id/1197831809/vector/male-hand-holding-megaphone-with-lets-talk-speech-bubble-loudspeaker-banner-for-business.jpg?s=612x612&w=0&k=20&c=sIgn6Yz1eQF2NPvzLabS2xmR_vrnzNOSCtwKDkeMSLs=" 
         alt="Map Image" 
         aria-label="Map Image" 
       />

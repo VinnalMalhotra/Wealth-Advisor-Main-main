@@ -124,6 +124,8 @@ aside {
 .about-manager h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 1.5em;
+  color: #003366;
 
 }
 
@@ -139,12 +141,17 @@ aside {
 
 .manager-career h2{
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  color: #003366;
   
 }
 
 .manager-career ul {
   column-count: 2;
-  column-gap:20px;
+  column-gap:40px;
+  line-height: 2em;
 }
 
 /* Articles and Insights Section */
@@ -155,6 +162,9 @@ aside {
 .articles-insights h2 {
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  color: #003366;
 }
 
 .articles-insights article {
@@ -163,6 +173,8 @@ aside {
   vertical-align: top;
   margin: 0 1.5%;
   text-align: left;
+  margin-left: 2.8em;
+    margin-right: 4em;
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 10px;
@@ -198,6 +210,8 @@ aside {
   max-width: 60%;
   padding-right: 20px;
   text-align: justify;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .schedule-appointment img {
