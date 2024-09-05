@@ -66,17 +66,34 @@ const Search: Template<TemplateRenderProps> = ({ document }) => {
 
   return (
     <PageLayout _site={_site}>
-      <section
-        className="hero"
-        style={{
-          backgroundImage:
-            'url("https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
-        }}
-      >
-        <article>
-          <h1>{c_heroSection.name}</h1>
-        </article>
-      </section>
+<section
+      className="wealth-manager"
+      style={{
+        backgroundImage:
+          "url('https://img.freepik.com/free-photo/skyline-aerial-landscape-metropolitan-city_482257-14002.jpg?t=st=1724749731~exp=1724753331~hmac=5d636149e76abb35f7e6930c316bda95c92d3375952688300a846d7eecfe916e&w=1800')",
+      }}
+    >
+      <img
+        src="https://img.freepik.com/premium-photo/man-with-shirt-that-says-he-is-smiling_1139891-2591.jpg?w=1380"
+        alt="Ali Hussain"
+        aria-label="Ali Hussain - Wealth Manager"
+      />
+      <article className="manager-info">
+        <h1>Ali Hussain</h1>
+        <p>Wealth Advisor</p>
+        <address>
+          Wolf Creek, Montana
+          <br />
+          Capital Fins Bank
+          <br />
+          (406) 555-2345 |{" "}
+          <a href="mailto:ali.hussain@capitalfins.com">ali.hussain@capitalfins.com</a>
+        </address>
+        <a href="#" className="cta-button" aria-label="Request An Appointment">
+          Request An Appointment
+        </a>
+      </article>
+    </section>
       <section className="products">
         <h2>Our Popular Products</h2>
         {c_relatedProducts.map((item, index) => (
@@ -104,49 +121,119 @@ const Search: Template<TemplateRenderProps> = ({ document }) => {
         ))}
       </section>
 
-      <section className="insights">
-        <h2>Insights</h2>
 
-        {c_relatedArticles.map((item, index) => (
-          <article key={index}>
-            <figure>
-              <img
-                src={item.c_image.url}
-                alt="Free Checking"
-                aria-label="Free Checking Image"
-                className="product-image"
-              />
-              <figcaption>
-                <h3>{item.name}</h3>
-                <p>{item.c_shortDescriptionV1}</p>
-                <a
-                  href="#"
-                  className="cta-button"
-                  aria-label="Learn More About Free Checking"
-                >
-                  Learn More
-                </a>
-              </figcaption>
-            </figure>
-          </article>
-        ))}
+<section className="about-manager">
+        <h2>About</h2>
+        <p>
+          Ali Hussain is a dedicated Wealth Manager at Capital Fins Bank, living in Wolf Creek, Montana. 
+          With a background rooted in finance from an early age, Ali's strategic investment approaches have consistently 
+          delivered exceptional returns for his clients. His unwavering commitment to excellence earned him the prestigious 
+          Pinnacle Award for Wealth Management at a young age. Outside of work, he enjoys fishing, home brewing, and solving 
+          crossword puzzles, which keep him intellectually stimulated and creatively engaged.
+        </p>
       </section>
 
-      <section
-        className="locator"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1519219788971-8d9797e0928e?q=80&w=2888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-        }}
-      >
-        <h2>Start Your Financial Journey Today</h2>
-        <div className="search-container">
-          <input type="text" placeholder="Yext AI Search.." name="search" />
-          <button type="submit">
-            <i className="fa fa-search"></i>
-          </button>
-        </div>
+      <section className="manager-career">
+        <h2>Education and Professional Journey</h2>
+        <ul>
+          <li>
+            <strong>Bachelor's Degree in Finance</strong> - University of Michigan, 2008 (Dean's List, President of the Finance Club)
+          </li>
+          <li>
+            <strong>MBA in Financial Management</strong> - Harvard Business School, 2012 (Graduated with Distinction)
+          </li>
+          <li>
+            <strong>Certified Financial Planner (CFP)</strong> - 2013, Certified Financial Planner Board of Standards, Inc.
+          </li>
+          <li>
+            <strong>Chartered Financial Analyst (CFA)</strong> - 2015, CFA Institute
+          </li>
+          <li>
+            <strong>Certified Wealth Strategist (CWS)</strong> - 2016, Cannon Financial Institute
+          </li>
+          <li>
+            <strong>Junior Financial Analyst</strong> - Goldman Sachs, New York, NY (2008 - 2010)
+          </li>
+          <li>
+            <strong>Wealth Management Associate</strong> - Morgan Stanley, Chicago, IL (2012 - 2015)
+          </li>
+          <li>
+            <strong>Senior Wealth Manager</strong> - J.P. Morgan Private Bank, San Francisco, CA (2015 - 2018)
+          </li>
+          <li>
+            <strong>Director of Wealth Management</strong> - Capital Fins Bank, Wolf Creek, MT (2018 - Present)
+          </li>
+        </ul>
       </section>
+
+      <section className="articles-insights">
+      <h2>Articles and Insights by Ali Hussain</h2>
+      <article>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Article Image 1"
+          aria-label="Article Image 1"
+        />
+        <h3>Understanding Wealth</h3>
+        <p>
+          A brief overview of effective strategies to manage wealth and ensure long-term growth.
+        </p>
+        <a href="#" className="cta-button" aria-label="Read More on Wealth Management Strategies">
+          Read More
+        </a>
+      </article>
+      <article>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Article Image 2"
+          aria-label="Article Image 2"
+        />
+        <h3>Investment Planning for the Future</h3>
+        <p>
+          Learn about the importance of planning your investments early for a secure future.
+        </p>
+        <a href="#" className="cta-button" aria-label="Read More on Investment Planning">
+          Read More
+        </a>
+      </article>
+      <article>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Article Image 3"
+          aria-label="Article Image 3"
+        />
+        <h3>Navigating Market Volatility</h3>
+        <p>
+          Explore strategies to navigate and thrive during periods of market volatility.
+        </p>
+        <a href="#" className="cta-button" aria-label="Read More on Navigating Market Volatility">
+          Read More
+        </a>
+      </article>
+    </section>
+
+    <section className="schedule-appointment">
+      <h2>Let's Talk!</h2>
+      
+      <article className="appointment-text">
+        <p>
+          At Capital Fins Bank, our advisors are dedicated to the highest standards of ethics, always putting customers first. 
+          With a proud legacy of excellence, we are committed to helping you achieve your financial goals. 
+          Let us guide you on your journey—schedule an appointment using the button below.
+        </p>
+      </article>
+      
+      <img 
+        src="https://via.placeholder.com/300x200" 
+        alt="Map Image" 
+        aria-label="Map Image" 
+      />
+      
+      <a href="#" className="cta-button" aria-label="Schedule an Appointment">
+        Schedule an Appointment
+      </a>
+    </section>
+
     </PageLayout>
   );
 };
