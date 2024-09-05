@@ -94,32 +94,7 @@ const Search: Template<TemplateRenderProps> = ({ document }) => {
         </a>
       </article>
     </section>
-      <section className="products">
-        <h2>Our Popular Products</h2>
-        {c_relatedProducts.map((item, index) => (
-          <article key={index}>
-            <figure>
-              <img
-                src={item.c_image.url}
-                alt="Free Checking"
-                aria-label="Free Checking Image"
-                className="product-image"
-              />
-              <figcaption>
-                <h3>{item.name}</h3>
-                <p>{item.c_shortDescriptionV1}</p>
-                <a
-                  href="#"
-                  className="cta-button"
-                  aria-label="Learn More About Free Checking"
-                >
-                  Learn More
-                </a>
-              </figcaption>
-            </figure>
-          </article>
-        ))}
-      </section>
+
 
 
 <section className="about-manager">

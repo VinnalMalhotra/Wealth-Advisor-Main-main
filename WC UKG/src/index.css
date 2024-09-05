@@ -14,12 +14,11 @@ img {
   height: auto;
 }
 
-h1,
-h2,
-h3 {
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+h1, h2, h3 {
+  color: #003366;
+}
+a {
+  color:#ffcc02;
 }
 
 /* Header Section */
@@ -73,193 +72,144 @@ aside {
 }
 
 .cta-button {
-  background-color: #ffcc00;
-  color: #003366;
+  background-color: #003366;
+  color: #ffcc02;
   padding: 8px 12px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
 }
-
-/* Hero Section */
-.hero {
+/* Wealth Manager Section */
+.wealth-manager {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 60px;
-  height: 60vh;
+  padding: 40px;
 }
 
-.hero h1 {
-  font-size: 2.5em;
+.wealth-manager img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.manager-info {
+  text-align: left;
   max-width: 50%;
 }
 
-.lead-form {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 40%;
-  text-align: center;
-}
-
-.lead-form fieldset {
-  border: none;
-  padding: 0;
-}
-
-.lead-form legend {
-  font-size: 1.5em;
+.manager-info h1 {
+  font-size: 2.5em;
   margin-bottom: 10px;
 }
 
-.lead-form label {
-  display: block;
-  margin-top: 10px;
+.manager-info p,
+.manager-info address {
+  margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
-.lead-form input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-top: 5px;
+.manager-info .cta-button {
+  margin-top: 20px;
 }
 
-.lead-form button {
-  background-color: #ffcc00;
-  color: #003366;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 15px;
-  font-size: 1em;
-  display: block;
-  text-align: center;
-}
-
-/* Products Section */
-.products {
-  background-color: #f4f4f4;
+/* About the Wealth Manager Section */
+.about-manager {
   padding: 40px 20px;
+  text-align: justify;
+  background-color: #f4f4f4;
+}
+.about-manager h2 {
   text-align: center;
+  margin-bottom: 30px;
+
 }
 
-.products h2 {
+.about-manager ul {
+  padding-left: 20px;
+}
+
+.about-manager ul li {
+  margin-bottom: 10px;
+}
+
+/* Manager's Career and Education*/
+
+.manager-career h2{
+  text-align: center;
+  
+}
+
+.manager-career ul {
+  column-count: 2;
+  column-gap:20px;
+}
+
+/* Articles and Insights Section */
+.articles-insights {
+  padding: 40px 20px;
+}
+
+.articles-insights h2 {
+  text-align: center;
   margin-bottom: 30px;
 }
 
-.products article {
+.articles-insights article {
   display: inline-block;
-  width: 30%;
-  text-align: left;
+  width: 24%;
   vertical-align: top;
   margin: 0 1.5%;
-}
-
-.products figure {
-  background: white;
+  text-align: left;
+  background-color: #f4f4f4;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 25rem;
 }
 
-.products h3 {
+.articles-insights h3 {
   margin-top: 15px;
   margin-bottom: 10px;
 }
 
-.products p {
+.articles-insights p {
   margin-bottom: 20px;
 }
 
-.products .cta-button {
+.articles-insights .cta-button {
   display: block;
   text-align: center;
-}
-
-/* Insights Section */
-.insights {
-  padding: 40px 20px;
-}
-
-.insights h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.insights article {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
-  margin: 0 1.5%;
-  text-align: left;
-}
-
-.insights article img {
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.insights .cta-button {
-  display: block;
-  text-align: center;
-}
-
-/* Locator Section */
-.locator {
-  background-size: cover;
-  background-position: center;
-  padding: 60px;
-  color: white;
-  text-align: center;
-  height: 15rem;
-}
-
-.locator h2 {
-  margin-bottom: 30px;
-}
-
-.locator form {
-  display: inline-block;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  width: 25em;
-}
-
-.locator label {
-  display: block;
   margin-top: 10px;
 }
 
-.locator input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-top: 5px;
+/* Schedule Appointment Section */
+.schedule-appointment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
 }
 
-.locator button {
-  background-color: #ffcc00;
-  color: #003366;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 15px;
-  font-size: 1em;
+.schedule-appointment .appointment-text {
+  max-width: 60%;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.schedule-appointment img {
+  max-width: 30%;
+  border-radius: 10px;
+}
+
+.schedule-appointment .cta-button {
   display: block;
+  margin-top: 20px;
   text-align: center;
+  width: 20%;
 }
 
 /* Footer Section */
@@ -293,32 +243,8 @@ footer nav ul li a {
   text-decoration: none;
   display: block;
 }
-.search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ffcc02;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  width: 5rem;
-}
-.search-container button:hover {
-  background: #ccc;
-}
-.search-container {
-  width: 50%;
-  display: flex;
-  margin: auto;
-}
 
-.product-image {
-  height: 50%;
-  aspect-ratio: 1/1;
-}
-
-body {
+body{
   margin-left: auto;
   margin-right: auto;
   /* margin-bottom: 1rem; */
@@ -326,7 +252,7 @@ body {
   max-width: var(--page-width);
   padding: 0rem 3rem 0rem;
 
-  @media (max-width: 430px) {
-    padding: 2rem 1rem 2rem;
-  }
+@media (max-width: 430px) {
+  padding: 2rem 1rem 2rem;
+}
 }
